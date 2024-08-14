@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpj54ai45k4kp"]
+
+[ext_resource type="Shader" path="res://scroll.gdshader" id="1_4i6f4"]
+[ext_resource type="Texture2D" uid="uid://cfbeg7y7nuoha" path="res://assets/underwater-fantasy-files/PNG/underwater-fantasy-preview.png" id="1_v0fjb"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tptap"]
+shader = ExtResource("1_4i6f4")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(1024, 600)
+offset_right = 1024.0
+offset_bottom = 600.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_tptap")
+offset_left = -4.0
+offset_right = 1028.0
+offset_bottom = 600.0
+texture = ExtResource("1_v0fjb")
+stretch_mode = 6
