@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cpj54ai45k4kp"]
 
 [ext_resource type="Shader" path="res://scroll.gdshader" id="1_4i6f4"]
-[ext_resource type="Texture2D" uid="uid://cfbeg7y7nuoha" path="res://assets/underwater-fantasy-files/PNG/underwater-fantasy-preview.png" id="1_v0fjb"]
+[ext_resource type="Texture2D" uid="uid://dl2vxut253xc1" path="res://assets/171940772-pixel-art-water-background-seamless-sea-texture-backdrop-vector-illustration.jpg" id="2_abqqd"]
 [ext_resource type="PackedScene" uid="uid://yedqlawt6q26" path="res://scenes/player.tscn" id="3_74tx2"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tptap"]
@@ -18,11 +18,15 @@ metadata/_edit_use_anchors_ = true
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_tptap")
-offset_left = -4.0
-offset_right = 1028.0
-offset_bottom = 600.0
-texture = ExtResource("1_v0fjb")
-stretch_mode = 6
+offset_left = -19.0
+offset_top = -3.0
+offset_right = 1013.0
+offset_bottom = 597.0
+scale = Vector2(1.04209, 1.18413)
+texture = ExtResource("2_abqqd")
+expand_mode = 5
+stretch_mode = 4
 
 [node name="Player" parent="." instance=ExtResource("3_74tx2")]
-position = Vector2(82, 391)
+position = Vector2(84, 366)
+scale = Vector2(6.15143, 5.30836)
