@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://cpj54ai45k4kp"]
 
 [ext_resource type="Shader" path="res://scroll.gdshader" id="1_4i6f4"]
-[ext_resource type="Texture2D" uid="uid://cfbeg7y7nuoha" path="res://assets/underwater-fantasy-files/PNG/underwater-fantasy-preview.png" id="1_v0fjb"]
+[ext_resource type="Texture2D" uid="uid://dl2vxut253xc1" path="res://assets/171940772-pixel-art-water-background-seamless-sea-texture-backdrop-vector-illustration.jpg" id="2_abqqd"]
 [ext_resource type="PackedScene" uid="uid://yedqlawt6q26" path="res://scenes/player.tscn" id="3_74tx2"]
 [ext_resource type="PackedScene" uid="uid://nkrtsay1cbx" path="res://scenes/Eel.tscn" id="5_3qxgm"]
 [ext_resource type="PackedScene" uid="uid://ynvgeamu2xby" path="res://scenes/turtle2d.tscn" id="5_y8w17"]
@@ -23,29 +23,13 @@ metadata/_edit_use_anchors_ = true
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_tptap")
-offset_left = -4.0
-offset_right = 1028.0
-offset_bottom = 600.0
-texture = ExtResource("1_v0fjb")
-stretch_mode = 6
+offset_left = -19.0
+offset_top = -3.0
+offset_right = 1013.0
+offset_bottom = 597.0
+scale = Vector2(1.04209, 1.18413)
+texture = ExtResource("2_abqqd")
+expand_mode = 5
+stretch_mode = 4
 
 [node name="Player" parent="." instance=ExtResource("3_74tx2")]
-position = Vector2(87, 369)
-
-[node name="CharacterBody2D2" parent="." instance=ExtResource("5_3qxgm")]
-position = Vector2(491, 172)
-scale = Vector2(1.35928, 2.18421)
-
-[node name="CharacterBody2D" parent="." instance=ExtResource("5_y8w17")]
-position = Vector2(288, 243)
-scale = Vector2(0.420927, 0.463533)
-
-[node name="CharacterBody2D3" parent="." instance=ExtResource("6_d0lcw")]
-position = Vector2(523, 420)
-scale = Vector2(0.799945, 0.749738)
-
-[node name="CharacterBody2D4" parent="." instance=ExtResource("7_4fgj7")]
-position = Vector2(831, 307)
-
-[node name="CharacterBody2D5" parent="." instance=ExtResource("8_ai8d4")]
-position = Vector2(628, 249)
