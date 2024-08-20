@@ -1,13 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://cpj54ai45k4kp"]
+[gd_scene load_steps=5 format=3 uid="uid://cpj54ai45k4kp"]
 
 [ext_resource type="Shader" path="res://scroll.gdshader" id="1_4i6f4"]
 [ext_resource type="Texture2D" uid="uid://dl2vxut253xc1" path="res://assets/171940772-pixel-art-water-background-seamless-sea-texture-backdrop-vector-illustration.jpg" id="2_abqqd"]
 [ext_resource type="PackedScene" uid="uid://yedqlawt6q26" path="res://scenes/player.tscn" id="3_74tx2"]
-[ext_resource type="PackedScene" uid="uid://nkrtsay1cbx" path="res://scenes/Eel.tscn" id="5_3qxgm"]
-[ext_resource type="PackedScene" uid="uid://ynvgeamu2xby" path="res://scenes/turtle2d.tscn" id="5_y8w17"]
-[ext_resource type="PackedScene" uid="uid://bd00hvj1nq07d" path="res://scenes/Dangerousfish1.tscn" id="6_d0lcw"]
-[ext_resource type="PackedScene" uid="uid://b0qbx7okhkdbr" path="res://scenes/DangerousAnimal2.tscn" id="7_4fgj7"]
-[ext_resource type="PackedScene" uid="uid://buhcc7etuds2p" path="res://scenes/OcotpusDangerousanimal3.tscn" id="8_ai8d4"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tptap"]
 shader = ExtResource("1_4i6f4")
@@ -33,3 +28,5 @@ expand_mode = 5
 stretch_mode = 4
 
 [node name="Player" parent="." instance=ExtResource("3_74tx2")]
+position = Vector2(99, 389)
+scale = Vector2(5.2402, 5.45538)
