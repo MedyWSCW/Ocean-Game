@@ -165,7 +165,7 @@ scale = Vector2(-9.76219, 7.39439)
 sprite_frames = SubResource("SpriteFrames_d18eo")
 animation = &"Swim"
 autoplay = "Attack"
-frame_progress = 0.790928
+frame_progress = 0.17393
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 1)

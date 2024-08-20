@@ -33,3 +33,20 @@ expand_mode = 5
 stretch_mode = 4
 
 [node name="Player" parent="." instance=ExtResource("3_74tx2")]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("8_ai8d4")]
+position = Vector2(603, 247)
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("5_3qxgm")]
+position = Vector2(291, 413)
+scale = Vector2(3, 3.68)
+
+[node name="CharacterBody2D3" parent="." instance=ExtResource("7_4fgj7")]
+position = Vector2(267, 173)
+
+[node name="CharacterBody2D4" parent="." instance=ExtResource("6_d0lcw")]
+position = Vector2(615, 409)
+
+[node name="CharacterBody2D5" parent="." instance=ExtResource("5_y8w17")]
+position = Vector2(145, 273)
+scale = Vector2(0.576749, 0.598592)

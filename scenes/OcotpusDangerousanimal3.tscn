@@ -179,7 +179,7 @@ scale = Vector2(-4.18771, 3.73557)
 sprite_frames = SubResource("SpriteFrames_hhs74")
 animation = &"Swim"
 autoplay = "Swim"
-frame_progress = 0.291431
+frame_progress = 0.479493
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(28, -1)
