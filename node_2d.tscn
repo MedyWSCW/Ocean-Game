@@ -18,15 +18,16 @@ metadata/_edit_use_anchors_ = true
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_tptap")
-offset_left = -19.0
-offset_top = -3.0
-offset_right = 1013.0
-offset_bottom = 597.0
+offset_left = -14.0
+offset_top = -1.0
+offset_right = 1000.0
+offset_bottom = 574.0
 scale = Vector2(1.04209, 1.18413)
 texture = ExtResource("2_abqqd")
 expand_mode = 5
 stretch_mode = 4
 
 [node name="Player" parent="." instance=ExtResource("3_74tx2")]
+visible = false
 position = Vector2(99, 389)
 scale = Vector2(5.2402, 5.45538)
