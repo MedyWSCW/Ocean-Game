@@ -1,11 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://cpj54ai45k4kp"]
+[gd_scene load_steps=5 format=3 uid="uid://jovon77l2bk1"]
 
-[ext_resource type="Shader" path="res://scroll.gdshader" id="1_4i6f4"]
-[ext_resource type="Texture2D" uid="uid://dl2vxut253xc1" path="res://assets/171940772-pixel-art-water-background-seamless-sea-texture-backdrop-vector-illustration.jpg" id="2_abqqd"]
-[ext_resource type="PackedScene" uid="uid://yedqlawt6q26" path="res://scenes/player.tscn" id="3_74tx2"]
+[ext_resource type="Shader" path="res://scroll.gdshader" id="1_yq2s8"]
+[ext_resource type="Texture2D" uid="uid://dl2vxut253xc1" path="res://assets/171940772-pixel-art-water-background-seamless-sea-texture-backdrop-vector-illustration.jpg" id="2_e5rlp"]
+[ext_resource type="PackedScene" uid="uid://yedqlawt6q26" path="res://scenes/player.tscn" id="3_vt0kt"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tptap"]
-shader = ExtResource("1_4i6f4")
+shader = ExtResource("1_yq2s8")
 
 [node name="Node2D" type="Node2D"]
 
@@ -23,10 +23,10 @@ offset_top = -1.0
 offset_right = 1003.0
 offset_bottom = 525.0
 scale = Vector2(1.04209, 1.18413)
-texture = ExtResource("2_abqqd")
+texture = ExtResource("2_e5rlp")
 expand_mode = 5
 stretch_mode = 1
 
-[node name="Player" parent="." instance=ExtResource("3_74tx2")]
+[node name="Player" parent="." instance=ExtResource("3_vt0kt")]
 position = Vector2(64, 387)
 scale = Vector2(5.2402, 5.45538)

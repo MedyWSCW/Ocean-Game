@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://buhcc7etuds2p"]
+[gd_scene load_steps=27 format=3 uid="uid://cotp0scwco8cx"]
 
 [ext_resource type="Texture2D" uid="uid://bm3l0j6kkxnqy" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/6/Attack.png" id="1_upqrf"]
 [ext_resource type="Texture2D" uid="uid://dqomvxdv74d82" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/6/Death.png" id="2_sht40"]
