@@ -66,7 +66,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"new_animation",
-"speed": 5.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -98,7 +98,7 @@ position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_bk20q")
 animation = &"new_animation"
 autoplay = "new_animation"
-frame_progress = 0.414382
+frame_progress = 0.122985
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.825147, -12.5982)

@@ -28,6 +28,5 @@ expand_mode = 5
 stretch_mode = 1
 
 [node name="Player" parent="." instance=ExtResource("3_74tx2")]
-visible = false
 position = Vector2(99, 389)
 scale = Vector2(5.2402, 5.45538)
