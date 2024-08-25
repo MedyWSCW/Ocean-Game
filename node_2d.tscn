@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cpj54ai45k4kp"]
+[gd_scene load_steps=6 format=3 uid="uid://cpj54ai45k4kp"]
 
 [ext_resource type="Shader" path="res://scroll.gdshader" id="1_4i6f4"]
 [ext_resource type="Texture2D" uid="uid://dl2vxut253xc1" path="res://assets/171940772-pixel-art-water-background-seamless-sea-texture-backdrop-vector-illustration.jpg" id="2_abqqd"]
 [ext_resource type="PackedScene" uid="uid://yedqlawt6q26" path="res://scenes/player.tscn" id="3_74tx2"]
+[ext_resource type="PackedScene" uid="uid://ynvgeamu2xby" path="res://scenes/turtle2d.tscn" id="4_ps5hu"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tptap"]
 shader = ExtResource("1_4i6f4")
@@ -18,10 +19,12 @@ metadata/_edit_use_anchors_ = true
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_repeat = 2
 material = SubResource("ShaderMaterial_tptap")
+=======
 offset_left = -6.0
 offset_top = -1.0
 offset_right = 1003.0
 offset_bottom = 525.0
+>>>>>>> b5fd86dc49c818561c1f9df297ebbd05b18fdbd6
 scale = Vector2(1.04209, 1.18413)
 texture = ExtResource("2_abqqd")
 expand_mode = 5
@@ -30,3 +33,6 @@ stretch_mode = 1
 [node name="Player" parent="." instance=ExtResource("3_74tx2")]
 position = Vector2(99, 389)
 scale = Vector2(5.2402, 5.45538)
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("4_ps5hu")]
+position = Vector2(327, 219)

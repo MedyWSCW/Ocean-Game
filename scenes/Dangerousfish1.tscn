@@ -1,9 +1,10 @@
-[gd_scene load_steps=25 format=3 uid="uid://bd00hvj1nq07d"]
+[gd_scene load_steps=30 format=3 uid="uid://bd00hvj1nq07d"]
 
 [ext_resource type="Texture2D" uid="uid://cs4bpoh0hl3pt" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/3/Walk.png" id="1_xitui"]
 [ext_resource type="Texture2D" uid="uid://1xf6rwdf4ft5" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/3/Death.png" id="2_l6bad"]
 [ext_resource type="Texture2D" uid="uid://dhabl6v7q5w22" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/3/Attack.png" id="2_wu8de"]
 [ext_resource type="Texture2D" uid="uid://clecwb81ovmcx" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/3/Hurt.png" id="3_14p1g"]
+[ext_resource type="Texture2D" uid="uid://boc800ubryg6t" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/3/Idle.png" id="4_0uv13"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_71rgj"]
 atlas = ExtResource("2_wu8de")
@@ -60,6 +61,22 @@ region = Rect2(0, 0, 48, 48)
 [sub_resource type="AtlasTexture" id="AtlasTexture_cuo8p"]
 atlas = ExtResource("3_14p1g")
 region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dq7os"]
+atlas = ExtResource("4_0uv13")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccklh"]
+atlas = ExtResource("4_0uv13")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kf5b7"]
+atlas = ExtResource("4_0uv13")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xu6pp"]
+atlas = ExtResource("4_0uv13")
+region = Rect2(144, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2ft5p"]
 atlas = ExtResource("1_xitui")
@@ -138,6 +155,23 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_dq7os")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ccklh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kf5b7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xu6pp")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_2ft5p")
 }, {
 "duration": 1.0,
@@ -163,9 +197,10 @@ size = Vector2(342.75, 99.5)
 position = Vector2(2.00003, 1)
 scale = Vector2(-9.76219, 7.39439)
 sprite_frames = SubResource("SpriteFrames_d18eo")
-animation = &"Swim"
+animation = &"Idle"
 autoplay = "Attack"
-frame_progress = 0.790928
+frame = 1
+frame_progress = 0.581667
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 1)
