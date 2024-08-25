@@ -1,6 +1,6 @@
 [gd_scene load_steps=33 format=3 uid="uid://ynvgeamu2xby"]
 
-[ext_resource type="Script" path="res://scripts/turtle2d.gd" id="1_a7b4t"]
+[ext_resource type="Script" path="res://scripts/turtle2d.gd" id="1_e205c"]
 [ext_resource type="Texture2D" uid="uid://l1d50oit1ecx" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/2/Walk.png" id="1_mfad4"]
 [ext_resource type="Texture2D" uid="uid://cvh1bt2fo4dxq" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/2/Attack.png" id="2_68g8g"]
 [ext_resource type="Texture2D" uid="uid://vkl4n843gerv" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/2/Death.png" id="2_aisyo"]
@@ -207,7 +207,7 @@ animations = [{
 size = Vector2(125, 58.5)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_a7b4t")
+script = ExtResource("1_e205c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, 1.00002)
