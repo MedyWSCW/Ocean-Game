@@ -10,14 +10,12 @@ shader = ExtResource("1_yq2s8")
 [node name="Node2D" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
 custom_minimum_size = Vector2(1024, 600)
 offset_right = 1024.0
 offset_bottom = 600.0
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
-visible = false
 texture_repeat = 2
 material = SubResource("ShaderMaterial_tptap")
 offset_left = -6.0
