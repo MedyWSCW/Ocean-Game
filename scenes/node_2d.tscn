@@ -113,7 +113,6 @@ sources/0 = SubResource("TileSetAtlasSource_c6b5i")
 [node name="Node2D" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
 custom_minimum_size = Vector2(1024, 600)
 offset_right = 1024.0
 offset_bottom = 600.0
