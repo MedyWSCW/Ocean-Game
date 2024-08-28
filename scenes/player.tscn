@@ -140,6 +140,7 @@ height = 18.0
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(-285, -121)
 scale = Vector2(7.27143, 7.46138)
+up_direction = Vector2(0.707107, -0.707107)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
@@ -151,3 +152,8 @@ autoplay = "Idle_Movemment"
 position = Vector2(0.825147, -12.5982)
 scale = Vector2(2.64302, 1.31917)
 shape = SubResource("CapsuleShape2D_kyeg4")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+enabled = false
+zoom = Vector2(0.3, 0.3)
+position_smoothing_enabled = true
