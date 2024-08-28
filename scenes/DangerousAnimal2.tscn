@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://b0qbx7okhkdbr"]
+[gd_scene load_steps=31 format=3 uid="uid://xhgfa6r8g67c"]
 
 [ext_resource type="Texture2D" uid="uid://cme7piq6uabk7" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/4/Attack.png" id="1_0re3m"]
 [ext_resource type="Script" path="res://scripts/DangerousAnimal2.gd" id="1_s6phf"]
