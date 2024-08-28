@@ -1,7 +1,31 @@
-[gd_scene load_steps=15 format=3 uid="uid://yedqlawt6q26"]
+[gd_scene load_steps=21 format=3 uid="uid://yedqlawt6q26"]
 
 [ext_resource type="Texture2D" uid="uid://ce5em7o3ijtfw" path="res://assets/SpearFishing Assets Pack/Sprites/Diver-32x32/Diver 4.png" id="1_2mlyb"]
 [ext_resource type="Texture2D" uid="uid://c5gjtnbmt5rlh" path="res://assets/SpearFishing Assets Pack/Sprites/Diver-32x32/Diver 5.png" id="1_h3epk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nn22n"]
+atlas = ExtResource("1_h3epk")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxcuu"]
+atlas = ExtResource("1_h3epk")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r50oq"]
+atlas = ExtResource("1_h3epk")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcfgc"]
+atlas = ExtResource("1_h3epk")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2yyuy"]
+atlas = ExtResource("1_h3epk")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xvmrv"]
+atlas = ExtResource("1_h3epk")
+region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6oll3"]
 atlas = ExtResource("1_h3epk")
@@ -47,6 +71,29 @@ region = Rect2(0, 96, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_nn22n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jxcuu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r50oq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bcfgc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2yyuy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xvmrv")
+}],
+"loop": true,
+"name": &"Idle_Movemment",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_6oll3")
 }, {
 "duration": 1.0,
@@ -65,7 +112,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_grxdq")
 }],
 "loop": true,
-"name": &"new_animation",
+"name": &"Movement",
 "speed": 7.0
 }, {
 "frames": [{
@@ -91,20 +138,22 @@ radius = 1.5
 height = 18.0
 
 [node name="Player" type="CharacterBody2D"]
+position = Vector2(-285, -121)
 scale = Vector2(7.27143, 7.46138)
+up_direction = Vector2(0.707107, -0.707107)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_bk20q")
-animation = &"new_animation"
-autoplay = "new_animation"
-<<<<<<< HEAD
-frame_progress = 0.122985
-=======
-frame_progress = 0.793384
->>>>>>> 9a4243bc5e9acb2c7130c06f448ae02db5e3e569
+animation = &"Idle_Movemment"
+autoplay = "Idle_Movemment"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.825147, -12.5982)
 scale = Vector2(2.64302, 1.31917)
 shape = SubResource("CapsuleShape2D_kyeg4")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+enabled = false
+zoom = Vector2(0.3, 0.3)
+position_smoothing_enabled = true
