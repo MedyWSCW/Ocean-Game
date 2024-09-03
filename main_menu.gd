@@ -8,10 +8,10 @@ extends Control
 func _ready():
 	# Connect the pressed signal to the correct functions
 	start_button.button_down.connect("on_start_pressed")
-	exit_button.button.down.connect("on_exit_pressed")
+	exit_button.button_down.connect("button_exit_pressed")
 
 func on_start_pressed() -> void:
-	get_tree().change_scene_to(start_level)  # Corrected to change_scene_to, the latest method in Godot 4.x
+	get_tree().change_scene_to_packed(start_level)
 
 func on_exit_pressed() -> void:
 	get_tree().quit()
