@@ -1,7 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://rnxi5q7s35ys"]
+[gd_scene load_steps=6 format=3 uid="uid://rnxi5q7s35ys"]
 
 [ext_resource type="Texture2D" uid="uid://bio2w3mprnan3" path="res://assets/Preview_143.png" id="1_8m4kw"]
-[ext_resource type="Script" path="res://main_menu.gd" id="1_07078"]
 [ext_resource type="Shader" path="res://main_menu.gdshader" id="1_xk1dh"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_rj7im"]
@@ -20,7 +19,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_07078")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_repeat = 2
@@ -66,8 +64,7 @@ theme_override_constants/shadow_offset_y = 8
 theme_override_constants/outline_size = 24
 theme_override_fonts/font = SubResource("SystemFont_24auu")
 theme_override_font_sizes/font_size = 64
-text = "Sea Sweep with the Deep Cleaners
-"
+text = "Game Title"
 horizontal_alignment = 1
 vertical_alignment = 1
 

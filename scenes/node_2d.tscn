@@ -1413,7 +1413,7 @@ sources/0 = SubResource("TileSetAtlasSource_j6x7e")
 sources/1 = SubResource("TileSetAtlasSource_2txes")
 sources/2 = SubResource("TileSetAtlasSource_02viu")
 
-[node name="Node2D" type="Node2D"]
+[node name="main" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(1024, 600)
@@ -1435,7 +1435,6 @@ stretch_mode = 1
 [node name="Player" parent="." instance=ExtResource("3_vt0kt")]
 position = Vector2(447, 390)
 scale = Vector2(5.2402, 5.45538)
-up_direction = Vector2(0.707107, -0.707107)
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(5, 5)
