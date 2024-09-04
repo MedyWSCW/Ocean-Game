@@ -1470,7 +1470,6 @@ stretch_mode = 1
 [node name="Player" parent="." instance=ExtResource("3_vt0kt")]
 position = Vector2(447, 390)
 scale = Vector2(5.2402, 5.45538)
-up_direction = Vector2(0.707107, -0.707107)
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(5, 5)
