@@ -156,6 +156,4 @@ scale = Vector2(2.64302, 1.31917)
 shape = SubResource("CapsuleShape2D_kyeg4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-enabled = false
-zoom = Vector2(0.3, 0.3)
-position_smoothing_enabled = true
+zoom = Vector2(1.2, 1.2)
