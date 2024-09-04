@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://yedqlawt6q26"]
+[gd_scene load_steps=28 format=3 uid="uid://yedqlawt6q26"]
 
 [ext_resource type="Texture2D" uid="uid://ce5em7o3ijtfw" path="res://assets/SpearFishing Assets Pack/Sprites/Diver-32x32/Diver 4.png" id="1_2mlyb"]
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_eppma"]
@@ -50,6 +50,30 @@ region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_grxdq"]
 atlas = ExtResource("1_h3epk")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c3ucy"]
+atlas = ExtResource("1_2mlyb")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k26ee"]
+atlas = ExtResource("1_2mlyb")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7g3y5"]
+atlas = ExtResource("1_2mlyb")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yw6ko"]
+atlas = ExtResource("1_2mlyb")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v4epj"]
+atlas = ExtResource("1_2mlyb")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3i31o"]
+atlas = ExtResource("1_2mlyb")
 region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1i03p"]
@@ -118,6 +142,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_c3ucy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k26ee")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7g3y5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yw6ko")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v4epj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3i31o")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_1i03p")
 }, {
 "duration": 1.0,
@@ -135,7 +182,7 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kyeg4"]
-radius = 1.5
+radius = 1.97614
 height = 18.0
 
 [node name="Player" type="CharacterBody2D"]
@@ -145,17 +192,18 @@ up_direction = Vector2(0.707107, -0.707107)
 script = ExtResource("1_eppma")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -12)
+position = Vector2(0, -12.0621)
+scale = Vector2(1.03301, 1)
 sprite_frames = SubResource("SpriteFrames_bk20q")
 animation = &"Idle_Movemment"
 autoplay = "Idle_Movemment"
+frame = 3
+frame_progress = 0.4759
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.825147, -12.5982)
+position = Vector2(0.550098, -10.8559)
 scale = Vector2(2.64302, 1.31917)
 shape = SubResource("CapsuleShape2D_kyeg4")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-enabled = false
-zoom = Vector2(0.3, 0.3)
-position_smoothing_enabled = true
+zoom = Vector2(1.2, 1.2)
