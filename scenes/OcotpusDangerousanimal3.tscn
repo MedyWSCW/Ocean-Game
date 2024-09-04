@@ -1,10 +1,11 @@
-[gd_scene load_steps=34 format=3 uid="uid://cotp0scwco8cx"]
+[gd_scene load_steps=35 format=3 uid="uid://cotp0scwco8cx"]
 
 [ext_resource type="Texture2D" uid="uid://bm3l0j6kkxnqy" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/6/Attack.png" id="1_upqrf"]
 [ext_resource type="Texture2D" uid="uid://dqomvxdv74d82" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/6/Death.png" id="2_sht40"]
 [ext_resource type="Texture2D" uid="uid://cfy6vyjeewxx5" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/6/Hurt.png" id="3_ohwq1"]
 [ext_resource type="Texture2D" uid="uid://d211par8bmagt" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/6/Walk.png" id="4_0h3yj"]
 [ext_resource type="Texture2D" uid="uid://cnldnnsa1byqi" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/6/Idle.png" id="4_53lyb"]
+[ext_resource type="Script" path="res://scenes/CollisionShape2D.gd" id="6_xvbpj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0722x"]
 atlas = ExtResource("1_upqrf")
@@ -232,3 +233,4 @@ frame_progress = 0.770082
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(28, -1)
 shape = SubResource("RectangleShape2D_mw6tj")
+script = ExtResource("6_xvbpj")
