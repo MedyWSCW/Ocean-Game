@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://ynvgeamu2xby"]
+[gd_scene load_steps=34 format=3 uid="uid://ynvgeamu2xby"]
 
 [ext_resource type="Script" path="res://scripts/turtle2d.gd" id="1_e205c"]
 [ext_resource type="Texture2D" uid="uid://l1d50oit1ecx" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/2/Walk.png" id="1_mfad4"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://vkl4n843gerv" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/2/Death.png" id="2_aisyo"]
 [ext_resource type="Texture2D" uid="uid://baaivnjuxi5fr" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/2/Hurt.png" id="3_b6mlr"]
 [ext_resource type="Texture2D" uid="uid://bxkaup8xljf8" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/2/Idle.png" id="5_v2tq2"]
+[ext_resource type="PackedScene" uid="uid://3tys1qae8i1t" path="res://wander.tscn" id="7_wn5d6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c1mdn"]
 atlas = ExtResource("2_68g8g")
@@ -206,8 +207,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j282k"]
 size = Vector2(125, 58.5)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" node_paths=PackedStringArray("wander_direction")]
 script = ExtResource("1_e205c")
+wander_direction = NodePath("Wander")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, 1.00002)
@@ -223,5 +225,8 @@ position = Vector2(1, 4)
 shape = SubResource("RectangleShape2D_j282k")
 
 [node name="Timer" type="Timer" parent="."]
+
+[node name="Wander" parent="." groups=["FirstEnemy"] instance=ExtResource("7_wn5d6")]
+group_name = "FIrst Enemy"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
