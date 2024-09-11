@@ -1,5 +1,6 @@
-[gd_scene load_steps=35 format=3 uid="uid://cotp0scwco8cx"]
+[gd_scene load_steps=37 format=3 uid="uid://cotp0scwco8cx"]
 
+[ext_resource type="Script" path="res://scenes/OcotpusDangerousanimal3.gd" id="1_jfwlj"]
 [ext_resource type="Texture2D" uid="uid://bm3l0j6kkxnqy" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/6/Attack.png" id="1_upqrf"]
 [ext_resource type="Texture2D" uid="uid://dqomvxdv74d82" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/6/Death.png" id="2_sht40"]
 [ext_resource type="Texture2D" uid="uid://cfy6vyjeewxx5" path="res://assets/octopus-jellyfish-shark-and-turtle-free-sprite-pixel-art/6/Hurt.png" id="3_ohwq1"]
@@ -220,7 +221,11 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mw6tj"]
 size = Vector2(92, 102)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_w34t5"]
+radius = 258.002
+
 [node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_jfwlj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-0.999999, 2)
@@ -234,3 +239,9 @@ frame_progress = 0.770082
 position = Vector2(28, -1)
 shape = SubResource("RectangleShape2D_mw6tj")
 script = ExtResource("6_xvbpj")
+
+[node name="DetectionArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+position = Vector2(27, 0)
+shape = SubResource("CircleShape2D_w34t5")
