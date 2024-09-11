@@ -141,6 +141,7 @@ height = 18.0
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(183, 350)
 scale = Vector2(7.27143, 7.46138)
+collision_layer = 2
 up_direction = Vector2(0.707107, -0.707107)
 script = ExtResource("1_eppma")
 
