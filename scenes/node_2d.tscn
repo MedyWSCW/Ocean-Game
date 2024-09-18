@@ -1,5 +1,9 @@
-[gd_scene load_steps=20 format=3 uid="uid://jovon77l2bk1"]
 
+
+[gd_scene load_steps=21 format=3 uid="uid://jovon77l2bk1"]
+
+
+[ext_resource type="Script" path="res://scripts/game manager.gd" id="1_ueksx"]
 [ext_resource type="Shader" path="res://scroll.gdshader" id="1_yq2s8"]
 [ext_resource type="Texture2D" uid="uid://dl2vxut253xc1" path="res://assets/171940772-pixel-art-water-background-seamless-sea-texture-backdrop-vector-illustration.jpg" id="2_e5rlp"]
 [ext_resource type="PackedScene" uid="uid://yedqlawt6q26" path="res://scenes/player.tscn" id="3_vt0kt"]
@@ -9,7 +13,11 @@
 [ext_resource type="Texture2D" uid="uid://c0f23mchy5wkc" path="res://assets/SpearFishing Assets Pack/Sprites/Corals - 16x16/Emission Maps/Corals - EM.png" id="6_2o05k"]
 [ext_resource type="Texture2D" uid="uid://dbsj2841v5cyg" path="res://assets/SpearFishing Assets Pack/Sprites/Tiles - 16x16/Cliff.png" id="6_q0fu8"]
 [ext_resource type="Texture2D" uid="uid://c07q18nkt2su8" path="res://assets/SpearFishing Assets Pack/Sprites/SeaWeed - 16x32/Medium.png" id="9_fkx0u"]
-[ext_resource type="Texture2D" uid="uid://n1kipan313ue" path="res://assets/SpearFishing Assets Pack/Sprites/Deads/Emission Maps/Dead Large - 48x32 - EM.png" id="10_fd8em"]
+
+
+
+[ext_resource type="PackedScene" uid="uid://ceefv007lcgtd" path="res://scenes/token.tscn" id="10_4dx1t"]
+
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tptap"]
 shader = ExtResource("1_yq2s8")
@@ -1417,6 +1425,10 @@ sources/2 = SubResource("TileSetAtlasSource_02viu")
 
 [node name="main" type="Node2D"]
 
+[node name="Game Manager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_ueksx")
+
 [node name="ColorRect" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(1024, 600)
 offset_right = 1024.0
@@ -1455,3 +1467,23 @@ scale = Vector2(5, 5)
 tile_set = SubResource("TileSet_brqb1")
 format = 2
 layer_0/tile_data = PackedInt32Array(393217, 0, 1, 393218, 0, 1, 393221, 65536, 6, 262151, 65536, 6, 196616, 196608, 6, 196617, 196608, 6, 327697, 196608, 4, 327698, 196608, 4, 458779, 0, 5, 458780, 0, 5, 458778, 0, 5, 393248, 131072, 4, 393247, 131072, 4, 327702, 65536, 3, 327701, 65536, 3, 327703, 0, 2, 393252, 0, 2, 1376277, 0, 6, 1376271, 65536, 5, 1572872, 196608, 4, 1310723, 131072, 3, 1310756, 131072, 3, 1310752, 131072, 2, 786449, 131072, 2, 983043, 196608, 2, 983044, 196608, 2, 1835023, 131072, 2, 1769475, 196610, 6, 1835011, 196610, 7, 1769473, 196610, 6, 1835009, 196610, 7, 1769474, 196610, 6, 1835010, 196610, 7, 1769506, 196610, 6, 1835042, 196610, 7, 1769508, 196610, 6, 1835044, 196610, 7, 1769509, 196610, 6, 1835045, 196610, 7, 1835047, 196608, 3, 1835043, 0, 2, 1835046, 196608, 3, 1835041, 65536, 1)
+
+[node name="Token" parent="." instance=ExtResource("10_4dx1t")]
+position = Vector2(1403, 935)
+scale = Vector2(-5.33002, 5.41582)
+
+[node name="Token2" parent="." instance=ExtResource("10_4dx1t")]
+position = Vector2(1042, 403)
+scale = Vector2(-5.33002, 5.41582)
+
+[node name="Token3" parent="." instance=ExtResource("10_4dx1t")]
+position = Vector2(847, 191)
+scale = Vector2(-5.33002, 5.41582)
+
+[node name="Token4" parent="." instance=ExtResource("10_4dx1t")]
+position = Vector2(1467, 423)
+scale = Vector2(-5.33002, 5.41582)
+
+[node name="Token5" parent="." instance=ExtResource("10_4dx1t")]
+position = Vector2(1060, 856)
+scale = Vector2(-5.33002, 5.41582)
