@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdc76a8s35ow6"]
+
+[ext_resource type="PackedScene" uid="uid://ynvgeamu2xby" path="res://scenes/turtle2d.tscn" id="1_rhsnk"]
+
+[node name="testing" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_rhsnk")]
+position = Vector2(587, 219)
+
+[node name="Marker2D" type="Marker2D" parent="CharacterBody2D" groups=["FirstEnemy"]]
+position = Vector2(-41, 234)
+
+[node name="Marker2D2" type="Marker2D" parent="CharacterBody2D" groups=["FirstEnemy"]]
+position = Vector2(-421, -75)
+
+[node name="Marker2D3" type="Marker2D" parent="CharacterBody2D" groups=["FirstEnemy"]]
+position = Vector2(205, -84)
